@@ -1,0 +1,150 @@
+/* ============================================================
+   Conecta Oportunidades — Estilos globais
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #38BDF8;
+  --primary-dark: #0284C7;
+  --secondary: #10b981;
+  --accent: #f59e0b;
+  --dark: #0f172a;
+  --dark-card: #1e293b;
+  --text-muted: #94a3b8;
+  --border: #334155;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--dark);
+  color: #f8fafc;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #ffffff;
+}
+
+.text-muted {
+  color: var(--text-muted) !important;
+}
+
+/* === Navbar override === */
+.navbar-brand {
+  font-weight: 800;
+  font-size: 1.3rem;
+  color: var(--primary) !important;
+}
+
+/* === Cards === */
+.card {
+  border: 1px solid var(--border) !important;
+  background-color: var(--dark-card) !important;
+  color: #f8fafc;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.5);
+  border-color: var(--primary) !important;
+}
+
+/* === Badges === */
+.badge-modalidade-PRESENCIAL  { background-color: #dbeafe; color: #1e40af; }
+.badge-modalidade-REMOTO      { background-color: #d1fae5; color: #065f46; }
+.badge-modalidade-HIBRIDO     { background-color: #fef3c7; color: #92400e; }
+
+.badge-status-ATIVA           { background-color: #d1fae5; color: #065f46; }
+.badge-status-ENCERRADA       { background-color: #fee2e2; color: #991b1b; }
+
+.badge-cand-PENDENTE          { background-color: #fef3c7; color: #92400e; }
+.badge-cand-APROVADO          { background-color: #d1fae5; color: #065f46; }
+.badge-cand-REJEITADO         { background-color: #fee2e2; color: #991b1b; }
+
+/* === Hero === */
+.hero-section {
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 50%, #0f172a 100%);
+  color: white;
+  padding: 6rem 0;
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.15;
+}
+
+/* === Dashboard sidebar === */
+.sidebar {
+  min-height: calc(100vh - 60px);
+  background: var(--dark);
+  color: white;
+  padding: 1.5rem;
+}
+
+.sidebar .nav-link {
+  color: var(--text-muted);
+  border-radius: 8px;
+  padding: 0.6rem 1rem;
+  transition: all 0.2s;
+}
+
+.sidebar .nav-link:hover,
+.sidebar .nav-link.active {
+  background: rgba(37,99,235,0.15);
+  color: #93c5fd;
+}
+
+/* === Botões === */
+.btn-primary {
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-dark);
+  border-color: var(--primary-dark);
+}
+
+/* === Tabelas === */
+.table {
+  color: #f8fafc !important;
+}
+.table-hover tbody tr:hover {
+  background-color: rgba(255,255,255,0.05) !important;
+  cursor: pointer;
+}
+.table-light, .table-light th {
+  background-color: var(--dark-card) !important;
+  color: #f8fafc !important;
+  border-bottom: 1px solid var(--border);
+}
+
+/* === Animações === */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+  animation: fadeIn 0.4s ease forwards;
+}
+
+/* === Footer === */
+footer {
+  background: var(--dark);
+  color: var(--text-muted);
+}
