@@ -164,8 +164,8 @@ Usuários pré-cadastrados no script inicial de banco de dados (`database/init.s
 
 | Perfil | E-mail | Senha Padrão | Descrição |
 |---|---|---|---|
-| **Administrador** | `admin2@conecta.com` ou `admin@conecta.com` | `admin123` | Acesso completo ao Dashboard Admin |
-| **Empresa Demo** | `empresa@demo.com` | `empresa123` *(ou `admin123`)* | Publicação e gestão de vagas |
+| **Administrador** | `admin2@conecta.com` | `admin123` | Acesso completo ao Dashboard Admin |
+| **Empresa Demo** | `empresa@demo.com` | `empresa123` | Publicação e gestão de vagas |
 
 ---
 
